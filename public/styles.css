@@ -3,16 +3,19 @@
   margin: 0;
   box-sizing: border-box;
 }
+
 html {
   font-family: "Montserrat", sans-serif;
 }
+
 body {
   background: #eee;
   padding: 0 16px;
 }
 
 header {
-  background-color: #6690FF;
+  background-color: #3498db;
+  display: flex;
   margin: auto -16px;
   padding: 16px 32px;
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
@@ -22,19 +25,19 @@ header h1 {
   color: #fff;
   font-family: "McLaren", cursive;
   font-weight: 200;
+  align-items: center;
+  justify-content: center;
 }
 
-footer {
+header img{
+  height:40px;
+}
+
+header .mode{
   position: absolute;
-  text-align: center;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem;
+  right:32px;
 }
 
-footer p {
-  color: #666666;
-}
 .note {
   background: #fff;
   border-radius: 7px;
@@ -44,10 +47,12 @@ footer p {
   margin: 16px;
   float: left;
 }
+
 .note h1 {
   font-size: 1.1em;
   margin-bottom: 6px;
 }
+
 .note p {
   font-size: 1.1em;
   margin-bottom: 10px;
@@ -59,7 +64,7 @@ footer p {
   position: relative;
   float: right;
   margin-right: 10px;
-  color: #02AAFF;
+  color: #3498db;
   border: none;
   width: 36px;
   height: 36px;
@@ -67,17 +72,18 @@ footer p {
   outline: none;
 }
 
-form.create-note {
+.create-note {
   position: relative;
   width: 480px;
   margin: 30px auto 20px auto;
   background: #fff;
   padding: 15px;
   border-radius: 7px;
-  box-shadow: 0 1px 5px rgb(138, 137, 137);
+  box-shadow: 0 1px 5px #ccc;
 }
-form.create-note input,
-form.create-note textarea {
+
+.create-note input,
+.create-note textarea {
   width: 100%;
   border: none;
   padding: 4px;
@@ -87,11 +93,12 @@ form.create-note textarea {
   resize: 
   none;
 }
-form.create-note button {
+
+.create-note button {
   position: absolute;
   right: 18px;
   bottom: -18px;
-  background: #02AAFF;
+  background: #3498db;
   color: #fff;
   border: none;
   border-radius: 50%;
@@ -102,6 +109,7 @@ form.create-note button {
   outline: none;
 }
 
-.customclass:hover{
-  background-color: #666666;
+.create-note button:hover{
+  background: #31abfd;
 }
+

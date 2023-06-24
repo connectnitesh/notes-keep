@@ -8,7 +8,6 @@ function Header() {
     <header>
       <img src={NoteIcon} alt="" />
       <h1>Note Keep</h1>
-      
     </header>
   );
 }
