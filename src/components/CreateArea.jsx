@@ -55,8 +55,13 @@ function CreateArea(props) {
         />
         <Zoom in={isExpanded}>
           <Fab  onClick={submitNote}>
+<<<<<<< HEAD
             <AddIcon />
           </Fab> 
+=======
+            <AddIcon className={"customclass"}/>
+            </Fab> 
+>>>>>>> efd236931db00b5982e6884bc28145af6b4ca1ac
         </Zoom>
       </form>
     </div>
